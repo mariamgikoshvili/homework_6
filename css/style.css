@@ -1,0 +1,151 @@
+/* header */
+
+.container{
+    width: min(100%, 1440px);
+    margin: auto;
+}
+
+
+header{
+    /* width: min(100%, 1440px); */
+    background-color: #758BFD;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    padding: 53px 0px;
+}
+
+
+.logo_link{
+    width: 54px;
+    height: 54px;
+}
+
+.logo_img{
+    width: 100%;
+    height: 100%;
+}
+
+i{
+    font-size:x-large;
+    color: white;  
+}
+
+
+.header_ul{
+    display: flex;
+    justify-content: space-between;
+    width: 393px
+}
+
+
+.active{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    color: #133B3A;
+}
+
+.inactive{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.58px;
+    color: #DDEAF8;
+}
+
+/* section */
+
+.section1{
+    margin: auto;
+    /* background-color: #133B3A; */
+    width: 1244px;
+    margin: 94px auto;
+}
+
+.section_header{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36.77px;
+    text-align: left;
+    color:  #27187F;
+    margin-bottom: 68px;  
+}
+
+.section2{
+    width: 1244px;
+    display: flex;
+    margin: auto;
+    /* background-color: #758BFD; */
+    flex-wrap: wrap;
+    align-content: space-between;
+    gap: 22px;
+    }
+
+article{
+    background-color: #DDEAF8;
+    width: 400px;
+    height: 354px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 30px;
+}
+
+img{
+    width: 95%;
+    height: 220px;
+    /* margin: auto; */
+    /* background-color: #133B3A; */
+}
+
+button{
+    background-color: #758BFD;
+    width: 145px;
+    height: 44px;
+    /* border: none; */
+    /* ბორდერი არ აქვს ფიგმაში, მაგრამ როცა ვუშლი აღარ ეკლიკება */
+    border-radius: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+
+/* footer */
+
+footer{
+    background-color: #758BFD;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer_header{
+    text-decoration: solid;
+    text-decoration-line: underline;
+    font-family: Ubuntu;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #FFFFFF;
+
+
+}
+
+.footer_ul{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
