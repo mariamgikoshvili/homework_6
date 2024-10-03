@@ -1,22 +1,25 @@
-/* header */
+
+/* container */
 
 .container{
     width: min(100%, 1440px);
     margin: auto;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
-
+/* header */
 header{
     /* width: min(100%, 1440px); */
     background-color: #758BFD;
     display: flex;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 53px 0px;
+    padding: 53px 98px;
 }
 
-
+/* ლოგოს არ სჭირდება დაწერა */
 .logo_link{
     width: 54px;
     height: 54px;
@@ -27,16 +30,15 @@ header{
     height: 100%;
 }
 
-i{
-    font-size:x-large;
+.fa-circle-user{
+    font-size: 40px;
     color: white;  
 }
 
 
 .header_ul{
     display: flex;
-    justify-content: space-between;
-    width: 393px
+    column-gap: 50px
 }
 
 
@@ -61,8 +63,10 @@ i{
 .section1{
     margin: auto;
     /* background-color: #133B3A; */
-    width: 1244px;
+    width: calc( 1250 / 1440 * 100%);
     margin: 94px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .section_header{
@@ -76,32 +80,34 @@ i{
 }
 
 .section2{
-    width: 1244px;
+    width: 100%;
     display: flex;
     margin: auto;
     /* background-color: #758BFD; */
     flex-wrap: wrap;
-    align-content: space-between;
-    gap: 22px;
+    justify-content: center;
+    /* align-content: space-between; */
+    gap: 30px 22px;
     }
 
 article{
     background-color: #DDEAF8;
-    width: 400px;
-    height: 354px;
+    flex: 1 1 400px;
+    /* height: 354px; */
     display: flex;
     flex-direction: column;
     border-radius: 10px;
     align-items: flex-end;
-    gap: 30px;
+    row-gap: 30px;
     padding: 30px;
 }
 
 img{
-    width: 95%;
+    width: 100%;
     height: 220px;
     /* margin: auto; */
     /* background-color: #133B3A; */
+    object-fit: cover;
 }
 
 button{
@@ -133,7 +139,8 @@ footer{
 
 .footer_header{
     text-decoration: solid;
-    text-decoration-line: underline;
+    text-decoration: 3px solid underline #FFFFFF ;
+    text-underline-offset: 8px;
     font-family: Ubuntu;
     font-size: 32px;
     font-weight: 700;
@@ -145,7 +152,13 @@ footer{
 
 .footer_ul{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     gap: 32px;
 }
 
+.fa-tiktok,
+.fa-instagram,
+.fa-pinterest{
+    color: #FFFFFF;
+    font-size: 30px;
+}
